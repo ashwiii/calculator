@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #col{
+            color:white;
+            background-color: black
+        }
+    </style>
+</head>
+
+<body>
+    <br><br><br><br>
+    <table id="calcu" border="5px" align="center">
+        <h2 align="center">Calculator</h2>
+        <hr>
+        <br>
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><input type="button" onclick="allClear()" value="c" id="col"> </td>
+        </tr>
+        <tr>
+           
+            <td><input type="button" onclick="displayNum(1)" value="1" id="col"> </td>
+            <td><input type="button" onclick="displayNum(2)" value="2" id="col"> </td>
+            <td><input type="button" onclick="displayNum(3)" value="3" id="col"> </td>
+            <td><input type="button" onclick="displayNum('/')" value="/" id="col"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="displayNum(4)" value="4" id="col"> </td>
+            <td><input type="button" onclick="displayNum(5)" value="5" id="col"> </td>
+            <td><input type="button" onclick="displayNum(6)" value="6" id="col"> </td>
+            <td><input type="button" onclick="displayNum('*')" value="*" id="col"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="displayNum(7)" value="7" id="col" > </td>
+            <td><input type="button" onclick="displayNum(8)" value="8" id="col" > </td>
+            <td><input type="button" onclick="displayNum(9)" value="9" id="col" > </td>
+            <td><input type="button" onclick="displayNum('-')" value="-" id="col" > </td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="displayNum(0)" value="0" id="col" > </td>
+            <td><input type="button" onclick="displayNum('.')" value="." id="col" > </td>
+            <td><input type="button" onclick="evaluvateExp()" value="=" id="col"> </td>
+  
+            <td><input type="button" onclick="displayNum('+')" value="+" id="col" > </td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="removeElement()" value="&#9003;"></td>
+        </tr>
+    </table>
+</body>
+<script src="./calc.js"></script>
+
+</html>
